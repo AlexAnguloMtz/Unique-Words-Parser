@@ -12,7 +12,7 @@ public class WordParser {
             "\\s+|,\\s*|\\.\\s*|\\;\\s*|\\:\\s*|\\!\\s*|\\¡\\s*|\\¿\\s*|\\?\\s*|\\-\\s*|\\d+|=|'+|\\*+|\\ª+"
             + "|\\[\\s*|\\]\\s*|\\(\\s*|\\)\\s*|\\\"\\s*|\\_\\s*|\\%\\s*|\\+\\s*|\\/\\s*|\\#\\s*|\\$\\s*";
 
-    public List<String> parseWords(Collection<String> lines) {
+    public List<String> parseWords(Iterable<String> lines) {
        final List<String> parsedWords = new ArrayList<>();
         for (String line : lines) {
             parsedWords.addAll(wordsIn(line));

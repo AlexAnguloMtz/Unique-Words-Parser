@@ -61,7 +61,7 @@ public class UniqueWordsApp {
         return strings;
     }
 
-    private Set<String> removeDuplicates(List<String> words) {
+    private Set<String> removeDuplicates(Collection<String> words) {
         // Return a TreeSet, for 2 reasons:
         // 1. To remove duplicates
         // 2. To sort by lexicographical order

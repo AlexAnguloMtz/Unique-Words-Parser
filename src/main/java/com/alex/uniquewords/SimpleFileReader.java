@@ -6,6 +6,7 @@ import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Collection;
 import java.util.List;
 
 import static java.util.stream.Collectors.toList;
@@ -24,7 +25,7 @@ public class SimpleFileReader {
         }
     }
 
-    private List<String> allLowerCase(List<String> lines) {
+    private List<String> allLowerCase(Collection<String> lines) {
         return lines.stream()
                 .map(String::toLowerCase)
                 .collect(toList());
